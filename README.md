@@ -1,35 +1,35 @@
-# trafico_bici_VLC — Intensidad de tráfico ciclista por puntos de medida (València)
+# trafico_bici_VLC — Bicycle traffic intensity by measurement point (València)
 
-Archivo histórico de la **intensidad de tráfico de bicicletas** medida en los
-puntos de aforo ciclista de València, obtenida de la API de gobierno abierto
-municipal (hoy descatalogada).
+Historical archive of **bicycle traffic intensity** measured at València's
+cycling count points, obtained from the municipal open-government API (now
+decommissioned).
 
-## Origen
+## Source
 
-- **Fuente:** Ayuntamiento de València — API de gobierno abierto
-  *apigobiernoabiertortod.valencia.es/apirtod* (recurso
-  `intensidad_espiras.csv` correspondiente a puntos de medida ciclista).
-- API descatalogada; este repositorio es la copia de respaldo del histórico.
+- **Publisher:** València City Council — open-government API
+  *apigobiernoabiertortod.valencia.es/apirtod* (resource
+  `intensidad_espiras.csv` for the cycling measurement points).
+- Decommissioned API; this repository is the backup copy of the history.
 
-## Periodo
+## Period
 
-- **409 días** entre **03-04-2019** y **22-10-2024**.
+- **409 days** between **2019-04-03** and **2024-10-22**.
 
-## Estructura del repositorio
+## Repository layout
 
-- Un fichero ZIP por día: `DD-MM-YYYY.zip`, con los CSV capturados ese día.
-- Un commit ("new day") por día, fechado con la fecha real del dato.
+- One ZIP file per day: `DD-MM-YYYY.zip`, holding the CSVs captured that day.
+- One commit ("new day") per day, dated with the real date of the data.
 
-## Formato y campos
+## Format and fields
 
-Ficheros **CSV** con separador `;`. Columnas:
+**CSV** files with `;` separator. Columns:
 
-| Columna        | Significado                                              |
+| Column         | Meaning                                                 |
 |----------------|---------------------------------------------------------|
-| `modified`     | Marca de tiempo de la última actualización del dato.    |
-| `angulo`       | Orientación / ángulo del punto de medida.               |
-| `intensidad`   | Intensidad de tráfico ciclista medida.                  |
-| `punto_medida` | Identificador del punto de medida.                      |
-| `ycoord`       | Coordenada en **UTM EPSG:25830**.                       |
-| `xcoord`       | Coordenada en **UTM EPSG:25830**.                       |
-| `uri`          | URI del recurso en el portal de datos.                  |
+| `modified`     | Timestamp of the last update of the datum.              |
+| `angulo`       | Measurement-point orientation / angle.                  |
+| `intensidad`   | Measured bicycle traffic intensity.                     |
+| `punto_medida` | Measurement-point identifier.                           |
+| `ycoord`       | Coordinate in **UTM EPSG:25830**.                       |
+| `xcoord`       | Coordinate in **UTM EPSG:25830**.                       |
+| `uri`          | Resource URI on the data portal.                        |
